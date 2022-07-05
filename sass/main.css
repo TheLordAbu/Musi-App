@@ -311,8 +311,8 @@ header {
 
 .header__song_side .container_icons a {
   color: var(--text-colour);
-  padding: 0.5rem 0.8rem;
-  background-color: var(--components-black);
+  padding: 0.5rem 1rem;
+  background-color: var(--radio-light-grey);
   border-radius: 50%;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
