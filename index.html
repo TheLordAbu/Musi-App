@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="sass/main.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <!-- WEBSITE TITLE -->
+    <title>MusiApp &mdash; Your all-in-one music app</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__menu_side">
+        <div class="header__menu_side__title">
+          <i class="bx bxs-music"></i>
+          <h1>musi</h1>
+        </div>
+
+        <ul class="header__menu_side__side-bar" id="side-bar">
+          <li class="sideBarLinks active" id="homepageLink">
+            <a href="#" ><i class='bx bxs-home-smile'></i>HomePage<a>
+          </li>
+          <li class="sideBarLinks" id="BrowseLink">
+            <a href="#"><i class='bx bxs-music'></i>Browse</a>
+            </li>
+          <li class="sideBarLinks" id="PlaylistLink">
+            <a href="#">
+              <i class='bx bxs-disc'></i>Playlists
+            </a>
+          </li>
+          <li class="sideBarLinks" id="FavouritesLink">
+            <a href="#"><i class='bx bxs-heart'></i>Favourites</a>
+            <li class="italic"><strong><a href="#">Artists</a></strong></li>
+            <li class="italic"><strong><a href="#">Albums</a></strong></li>
+            <li class="italic"><strong><a href="#">Songs</a></strong></li>
+          </li>
+          <li class="sideBarLinks">
+            <a href="#"><i class='bx bxs-radio'></i>Radio</a>
+          </li>
+          <li class="sideBarLinks">
+            <a href="#"><i class='bx bxs-chip'></i>Settings</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- For Main interface -->
+      <div class="header__song_side ">
+        <nav>
+          <!-- <div class="three col">
+            <div class="hamburger" id="hamburger-9">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div> -->
+          <div class="search">
+            <i class='bx bx-search search_icon'></i>
+            <input type="text" placeholder="Search Music">
+          </div>
+          <ul>
+            <li><a href="#" class="btn">Free Trial</a></li>
+            <li><a href="#"><i class='bx bxs-bell top_icons'><span></span></i></a></li>
+            <li><a href="#"><i class='bx bxs-smile top_icons'></i></a></li>
+          </ul>
+        </nav>
+
+        <!-- HomePage Section -->
+        <div class="homepage-section section" id="home">
+          <div class="container">
+            <div class="container__title">
+              <h2>For You Today</h2>
+            </div>
+            <div class="container_icons">
+              <a href="#"><i class='bx bx-chevron-left'></i></a>
+              <a href="#"><i class='bx bx-chevron-right'></i></a>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="card">
+              <div class="card_img">
+                <img src="img/Homepage/Made-For-You.jpg" alt="Picture Of Music">
+              </div>
+              <div class="card_type">
+                <h4>Playlist</h4>
+              </div>
+              <div class="card_content">
+                <h4 class="card_content_title">Designed Especially For You</h4>
+                <h4 class="card_content_quantity">38 Tracks</h4>
+              </div>
+            </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="img/Homepage/anime-mix.png" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>Playlist</h4>
+                </div>
+                <div class="card_content">
+                  <h4 class="card_content_title">Anime Mix 2021</h4>
+                  <h4 class="card_content_quantity">102 Tracks</h4>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="img/Homepage/Recent-Listens.jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>Playlist</h4>
+                </div>
+                <div class="card_content">
+                  <h4 class="card_content_title">Recent Listens</h4>
+                  <h4 class="card_content_quantity">24 Tracks</h4>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="img/Homepage/Study-lofi hip hop.jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>Playlist</h4>
+                </div>
+                <div class="card_content">
+                  <h4 class="card_content_title">Study - Lofi Hip Hop</h4>
+                  <h4 class="card_content_quantity">38 Tracks</h4>
+                </div>
+              </div>
+            </div>
+          
+
+          <!-- Lower Navigation -->
+          <div class="container">
+            <div class="container__title">
+              <h2>The Best Titles</h2>
+            </div>
+            <div class="container_icons">
+              <a href="#"><i class='bx bx-chevron-left'></i></a>
+              <a href="#"><i class='bx bx-chevron-right'></i></a>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="card">
+              <div class="card_img">
+                <img src="img/Homepage/Best-titles (1).jpg" alt="Picture Of Music">
+              </div>
+              <div class="card_icon">
+                <i class='bx bx-heart'></i>
+              </div>
+              <div class="card_content card_content-2">
+                <h4 class="card_content_title">Designed Especially For You</h4>
+                <h4 class="card_content_quantity">38 Tracks</h4>
+              </div>
+            </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="img/Homepage/Best-titles (2).jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_icon">
+                  <i class='bx bx-heart'></i>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">On Repeat</h4>
+                  <h4 class="card_content_quantity">15 Tracks</h4>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="img/Homepage/Best-titles (3).jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_icon">
+                  <i class='bx bx-heart'></i>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">Must Listens</h4>
+                  <h4 class="card_content_quantity">20 Tracks</h4>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_img">
+                  <img src="img/Homepage/pexels-sebastiaan-stam-1482476.jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_icon">
+                  <i class='bx bx-heart'></i>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">Artists For You</h4>
+                  <h4 class="card_content_quantity">18 Tracks</h4>
+                </div>
+              </div>
+          </div>
+        </div> 
+
+         <!-- Browse Section -->
+         <div class="browse-section  section" id="browse">
+           <div class="browse_nav">
+             <ul id="navigation">
+              <li class="active" id="navigation_links"><a href="#">Genres</a></li>
+              <li id="navigation_links"><a href="#">New Releases</a></li>
+              <li id="navigation_links"><a href="#">Popular This Month</a></li>
+              <li id="navigation_links"><a href="#">Recommendation</a></li>
+              <li id="navigation_links"><a href="#">Rankings</a></li>
+              <li id="navigation_links"><a href="#">Live Broadcasts <span>(12)</span></a></li>
+             </ul>
+            </div>
+
+            <div class="browse_grid">
+              <div class="card browse_grid--1">
+                <div class="card_img">
+                  <img src="img/Browse/Browse-Pics (3).jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>Number 1</h4>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">Hip-Hop</h4>
+                  <h4 class="card_content_quantity"><span></span> 301k Listening At the moment</h4>
+                </div>
+              </div>
+
+              <div class="card browse_grid--2">
+                <div class="card_img">
+                  <img src="img/Browse/Browse-Pics (1).jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>#2</h4>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">Rap</h4>
+                  <h4 class="card_content_quantity"><span></span>234k Listens</h4>
+                </div>
+              </div>
+
+              <div class="card browse_grid--3">
+                <div class="card_img">
+                  <img src="img/Browse/Browse-Pics (4).jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>#3</h4>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">Pop</h4>
+                  <h4 class="card_content_quantity"><span></span>206k Listens</h4>
+                </div>
+              </div>
+
+              <div class="card browse_grid--4">
+                <div class="card_img">
+                  <img src="img/Browse/Browse-Pics (2).jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>#4</h4>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">Electro</h4>
+                  <h4 class="card_content_quantity"><span></span>183k Listens</h4>
+                </div>
+              </div>
+
+              <div class="card browse_grid--5">
+                <div class="card_img">
+                  <img src="img/Browse/Browse-Pics (5).jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>#5</h4>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">RnB</h4>
+                  <h4 class="card_content_quantity"><span></span>172k Listens</h4>
+                </div>
+              </div>
+
+              <div class="card browse_grid--6">
+                <div class="card_img">
+                  <img src="img/Browse/Browse-Pics (6).jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>#6</h4>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">Anime</h4>
+                  <h4 class="card_content_quantity"><span></span>135k Listens</h4>
+                </div>
+              </div>
+
+              <div class="card browse_grid--7">
+                <div class="card_img">
+                  <img src="img/Browse/Browse-Pics (7).jpg" alt="Picture Of Music">
+                </div>
+                <div class="card_type">
+                  <h4>#7</h4>
+                </div>
+                <div class="card_content card_content-2">
+                  <h4 class="card_content_title">Jazz</h4>
+                  <h4 class="card_content_quantity"><span></span>128k Listens</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Playlist Section -->
+          <div class="playlist-section section" id="playlist">
+            <div class="playlist-grid">
+              <!-- Left -->
+            <div class="playlist-info">
+              <div class="playlist-info-card">
+                <div class="playlist-info-card_img">
+                  <img src="img/Playlist/Frank Ocean Blonde.jpg" alt="Background Image">
+                </div>
+                <div class="playlist-info-card_container">
+                  <div class="playlist-info-card_container_img">
+                    <img src="img/Playlist/Frank Ocean Blonde.jpg" alt="Album Cover">
+                  </div>
+                  <div class="playlist-info-card_container_text">
+                    <a href="#">
+                      <i class='bx bx-world' ></i>
+                      Public Playlist
+                      <i class='bx bx-chevron-down'></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="playlist-info-card_content">
+                  <h4>38 Titles . 2h16mins</h4>
+                  <h3>Recent Listens</h3>
+                  <a href="#">
+                    <i class='bx bxs-pencil'></i>
+                    Modifier
+                  </a>
+                </div>
+              </div>
+              <div class="playlist-info-options">
+                <a href="#" class="btns">
+                  <i class='bx bx-plus'></i>
+                  Add Music
+                </a>
+                <a href="#" class="btns">
+                  <i class='bx bx-shuffle'></i>
+                  Shuffle Playback
+                </a>
+                <a href="#" class="btns">
+                  <i class='bx bxs-download' ></i>
+                  Download Playlist
+                </a>
+              </div>
+              <div class="playlist-info-desc">
+                <h3>Description</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos, accusamus est. Quod repellendus a minus laboriosam 
+                  architecto corrupti harum.</p>
+              </div>
+            </div>
+            
+            <!-- Right -->
+            <div class="playlist-music">
+              <div class="playlist-music_container">
+                <div class="playlist-music_container-row">
+                  <img src="img/Playlist/Fireboy DML x SPINALL - Sere.jpg" alt="Song">
+                  <div>
+                    <h4 class="title">SPINALL, Fireboy DML</h4>
+                    <h4 class="desc">Sere</h4>
+                  </div>
+                  <div class="grid-center">
+                    <h4 class="title">Added On</h4>
+                    <h4 class="desc">12th January 2022</h4>
+                  </div>
+                  <div class="grid-end">
+                    <h4 class="title">Duration</h4>
+                    <h4 class="desc">3:05</h4>
+                  </div>
+                  <i class='bx bx-play grid-end'></i>
+                </div>
+                <!-- Row 2 -->
+                 <div class="playlist-music_container-row">
+                  <img src="img/Playlist/Yung Nudy x Megan Thee Stallion - Shotta.jpg" alt="Song">
+                  <div>
+                    <h4 class="title">Yung Nudy</h4>
+                    <h4 class="desc">Shotta</h4>
+                  </div>
+                  <div class="grid-center">
+                    <h4 class="title">Added On</h4>
+                    <h4 class="desc">12th January 2022</h4>
+                  </div>
+                  <div class="grid-end">
+                    <h4 class="title">Duration</h4>
+                    <h4 class="desc">2:44</h4>
+                  </div>
+                  <i class='bx bx-play grid-end'></i>
+                </div>
+                <!-- Row 3 -->
+                 <div class="playlist-music_container-row">
+                  <img src="img/Playlist/Burna Boy-The Lion King-The Gift - Ja Are e.png" alt="Song">
+                  <div>
+                    <h4 class="title">Burna Boy</h4>
+                    <h4 class="desc">JA ARE E</h4>
+                  </div>
+                  <div class="grid-center">
+                    <h4 class="title">Added On</h4>
+                    <h4 class="desc">12th January 2022</h4>
+                  </div>
+                  <div class="grid-end">
+                    <h4 class="title">Duration</h4>
+                    <h4 class="desc">3:09</h4>
+                  </div>
+                  <i class='bx bx-play grid-end'></i>
+                </div>
+                <!-- Row 4 -->
+                 <div class="playlist-music_container-row">
+                  <img src="img/Playlist/Unknown T - Goodums (A COLORS SHOW).jpg" alt="Song">
+                  <div>
+                    <h4 class="title">Unknown T</h4>
+                    <h4 class="desc">Goodums</h4>
+                  </div>
+                  <div class="grid-center">
+                    <h4 class="title">Added On</h4>
+                    <h4 class="desc">12th January 2022</h4>
+                  </div>
+                  <div class="grid-end">
+                    <h4 class="title">Duration</h4>
+                    <h4 class="desc">2:56</h4>
+                  </div>
+                  <i class='bx bx-play grid-end'></i>
+                </div>
+                <!-- Row 5 -->
+                 <div class="playlist-music_container-row">
+                  <img src="img/Playlist/Brent Faiyaz - Trust.jpg" alt="Song">
+                  <div>
+                    <h4 class="title">Brent Faiyaz</h4>
+                    <h4 class="desc">Trust</h4>
+                  </div>
+                  <div class="grid-center">
+                    <h4 class="title">Added On</h4>
+                    <h4 class="desc">12th January 2022</h4>
+                  </div>
+                  <div class="grid-end">
+                    <h4 class="title">Duration</h4>
+                    <h4 class="desc">2:38</h4>
+                  </div>
+                  <i class='bx bx-play grid-end'></i>
+                </div>
+                <!-- Row 6 -->
+                 <div class="playlist-music_container-row">
+                  <img src="img/Playlist/Gunna - MET GALA.jpg" alt="Song">
+                  <div>
+                    <h4 class="title">Gunna</h4>
+                    <h4 class="desc">MET GALA</h4>
+                  </div>
+                  <div class="grid-center">
+                    <h4 class="title">Added On</h4>
+                    <h4 class="desc">12th January 2022</h4>
+                  </div>
+                  <div class="grid-end">
+                    <h4 class="title">Duration</h4>
+                    <h4 class="desc">2:29</h4>
+                  </div>
+                  <i class='bx bx-play grid-end'></i>
+                </div>
+                <!-- Row 7 -->
+                 <div class="playlist-music_container-row">
+                  <img src="img/Playlist/Hitt Kidd x Ashbeck  - Long Way From Home.jpg" alt="Song">
+                  <div>
+                    <h4 class="title">Hitt Kidd, Ashbeck</h4>
+                    <h4 class="desc">Long Way From Home</h4>
+                  </div>
+                  <div class="grid-center">
+                    <h4 class="title">Added On</h4>
+                    <h4 class="desc">12th January 2022</h4>
+                  </div>
+                  <div class="grid-end">
+                    <h4 class="title">Duration</h4>
+                    <h4 class="desc">3:48</h4>
+                  </div>
+                  <i class='bx bx-play grid-end'></i>
+                </div>
+              </div>
+              
+            </div>
+
+            </div>
+            
+          </div>
+
+          <!-- Favourites -->
+          <div class="favourites-section active section" id="favourites">
+            <div class="container">
+              <div class="container__title">
+                <h2>Artists</h2>
+              </div>
+              <div class="container_icons">
+                <a href="#"><i class='bx bx-chevron-left prev'></i></a>
+                <a href="#"><i class='bx bx-chevron-right next'></i></a>
+              </div>
+            </div>
+            <div class="grid-2-cols">
+              <div class="glass-card"></div>
+            </div>
+          </div>
+          <!-- Radio -->
+          <div class="radio-section section" id="radio">
+            <div class="browse_nav">
+              <ul>
+               <li class="active"><a href="#">See Everything</a></li>
+               <li><a href="#">Rap</a></li>
+               <li><a href="#">Lofi</a></li>
+               <li><a href="#">Pop</a></li>
+               <li><a href="#">Electro</a></li>
+               <li><a href="#">Jazz</a></li>
+               <li><a href="#">Rock</a></li>
+               <li><a href="#">Hip-Hop</a></li>
+               <li><a href="#">Anime</a></li>
+               <li><a href="#">classic</a></li>
+               <li><a href="#">Country</a></li>
+               <li><a href="#">Metal</a></li>
+               <li><a href="#">RnB</a></li>
+              </ul>
+             </div>
+
+             <div class="radio_grid">
+              <div class="radio_card">
+                <div class="radio_card_img">
+                  <img src="img/Radio/CapitalFM_radio.png" alt="Logo of radio station">
+                </div>
+                <div class="radio_card_content">
+                  <h4 class="radio_card_content_title">Capital</h4>
+                  <h4 class="radio_card_content_quantity"><span></span>493 Listeners</h4>
+                </div>
+              </div>
+              <div class="radio_card">
+                <div class="radio_card_img">
+                  <img src="img/Radio/danceUk_radio.jpg" alt="Logo of radio station">
+                </div>
+                <div class="radio_card_content">
+                  <h4 class="radio_card_content_title">Dance UK</h4>
+                  <h4 class="radio_card_content_quantity"><span></span>2.5k Listeners</h4>
+                </div>
+              </div>
+              <div class="radio_card">
+                <div class="radio_card_img">
+                  <img src="img/Radio/heart_radio.jpg" alt="Logo of radio station">
+                </div>
+                <div class="radio_card_content">
+                  <h4 class="radio_card_content_title">Heart Radio</h4>
+                  <h4 class="radio_card_content_quantity"><span></span>3.2k Listeners</h4>
+                </div>
+              </div>
+              <div class="radio_card">
+                <div class="radio_card_img">
+                  <img src="img/Radio/kisstory_radio.jpg" alt="Logo of radio station">
+                </div>
+                <div class="radio_card_content">
+                  <h4 class="radio_card_content_title">Kisstory</h4>
+                  <h4 class="radio_card_content_quantity"><span></span>1.6k Listeners</h4>
+                </div>
+              </div>
+              <div class="radio_card">
+                <div class="radio_card_img">
+                  <img src="img/Radio/LBC_radio.jpg" alt="Logo of radio station">
+                </div>
+                <div class="radio_card_content">
+                  <h4 class="radio_card_content_title">LBC Radio</h4>
+                  <h4 class="radio_card_content_quantity"><span></span>584 Listeners</h4>
+                </div>
+              </div>
+              <div class="radio_card">
+                <div class="radio_card_img">
+                  <img src="img/Radio/smooth_radio.jpg" alt="Logo of radio station">
+                </div>
+                <div class="radio_card_content">
+                  <h4 class="radio_card_content_title">Smooth Radio</h4>
+                  <h4 class="radio_card_content_quantity"><span></span>1.4k Listeners</h4>
+                </div>
+              </div>
+              <div class="radio_card">
+                <div class="radio_card_img">
+                  <img src="img/Radio/virgin_radio.jpg" alt="Logo of radio station">
+                </div>
+                <div class="radio_card_content">
+                  <h4 class="radio_card_content_title">Virgin</h4>
+                  <h4 class="radio_card_content_quantity"><span></span>109 Listeners</h4>
+                </div>
+              </div>
+              <div class="radio_card">
+                <div class="radio_card_img">
+                  <img src="img/Radio/radioXLondon_radio.jpg" alt="Logo of radio station">
+                </div>
+                <div class="radio_card_content">
+                  <h4 class="radio_card_content_title">RadioXL London</h4>
+                  <h4 class="radio_card_content_quantity"><span></span>1.8k Listeners</h4>
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+
+        
+
+      <!-- For Sound Bar -->
+      <div class="header__master_player">
+        <!-- Wave Animation -->
+        <div class="wave">
+          <div class="wave-1"></div>
+          <div class="wave-1"></div>
+          <div class="wave-1"></div>
+        </div>
+        <!-- For Song Name -->
+        <div class="song_namebox">
+          <h4 class="song_namebox-artist">
+            Pop Smoke x Hiroyuki Sawano
+          </h4>
+          <h4 class="song_namebox-title">
+            She Got a Thing x Vogel Im Käfig 
+          </h4>
+        </div>
+
+        <!-- For Play, Skip, Previous/Replay -->
+        <div class="navigation_icons">
+          <i class='bx bx-skip-previous' id="previousBtn"></i>
+          <div class="play--pause">
+            <i class='bx bx-play play active' id="playBtn"></i>
+            <i class='bx bx-pause pause' id="pauseBtn"></i>
+          </div>
+          <i class='bx bx-skip-next' id="nextBtn" ></i>
+        </div>
+        <!-- Song Length Bar -->
+        <div class="bar">
+          <!-- <input type="range" id="seek" min="0" value="0" max="100"> -->
+          <div class="bar-2" id="bar2"></div>
+          <!-- <div class="dot"></div> -->
+        </div>
+        <div class="song-timing">
+          <span id="currentStart">0:00</span>
+          <span>/</span>
+          <span id="currentEnd">0:00</span>
+        </div>
+  
+
+        <!-- Shuffle/ Replay, Playlists, Volume -->
+        <ul class="playlist_icons">
+          <li class="playlist_icons_box">
+            <a href="#">
+              <i class='bx bx-repeat playlist_icons_box_icon'></i>
+              Repeat
+            </a>
+          </li>
+          <li class="playlist_icons_box">
+            <a href="#">
+              <i class='bx bx-shuffle playlist_icons_box_icon'></i>
+              Shuffle
+            </a>
+          </li>
+          <li class="playlist_icons_box">
+            <a href="#">
+              <i class='bx bxs-playlist playlist_icons_box_icon'></i>
+              Playlist
+            </a>
+          </li>
+          <li class="playlist_icons_box">
+            <a href="#">
+              <i class='bx bxs-volume-full playlist_icons_box_icon' id="volume"></i>
+              Volume
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </header>
+
+    <script src="script.js"></script>
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>
